@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block body %}
+<h2>Olá, seja Bem Vindo</h2>
+
+{% if 1==3 %}
+    <p>adicionando condição</p>
+    {% else %}
+    <p>sem condição</p>
+    {% endif %}
+
+    {% for i in range(3) %}
+    <p>{{i}}</p>
+    {% endfor %}
+
+    <ol>
+        {% for nome in['Marcos', 'Ana', 'Julia'] %}
+        <li>{{nome}}</li>
+        {% endfor %}
+    </ol>
+
+{%endblock%}
